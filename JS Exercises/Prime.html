@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <h3>Check if given number is prime</h3>
+    <script>
+        function Prime(n){
+        let a;
+        let prime=true;
+        for(a=2;a<n;a++){
+            if(n%a==0){
+                prime=false;
+                break;
+            }
+        }
+        if(prime==false){
+            document.write(n+" is not a prime number.");
+        }
+        else{
+
+            document.write(n+" is a prime number.");
+        }
+        document.write("<br>");
+    }
+    Prime(2);
+    Prime(4);
+    Prime(7);
+    Prime(9);
+    Prime(10);
+    </script>
+</body>
+</html>

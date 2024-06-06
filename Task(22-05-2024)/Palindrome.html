@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <h3>Palindrome string</h3>
+    <script>
+        let s="noton";
+        let Revstr="";
+        for(let i=s.length-1;i>=0;i--){
+            Revstr=Revstr+s[i];
+        }
+        if(Revstr==s){
+            document.write(s+" is a palindrome");
+        }
+        else{
+            document.write(s+" is not a palindrome");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCD</title>
+</head>
+<body>
+    <h3>GCD of two numbers</h3>
+    <script>
+
+       function GCD(x,y){
+        if((typeof x !=='number') || (typeof y !=='number'))
+        return false;
+        x=Math.abs(x);
+        y=Math.abs(y);
+        while(y){
+            var t=y;
+            y=x%y;
+            x=t;
+        }
+        return x;
+    }
+    document.write(GCD(10,15));
+    document.write("<br>");
+       document.write(GCD(60,15));
+    </script>
+</body>
+</html>

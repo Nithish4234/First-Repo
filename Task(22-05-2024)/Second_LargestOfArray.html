@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Largest</title>
+</head>
+<body>
+    <h3>Second largest number in array</h3>
+    <script>
+        let a=[10,100,60,40,50];
+        function SecondLargest(a) {
+            let first = -Infinity;
+            let second = -Infinity;
+            for (let num of a) {
+                if (num > first) {
+                second = first;
+                first = num;
+                } else if (num > second && num < first) {
+                second = num;
+                }
+             }
+             document.write("Second largest number is "+second);
+            }
+            SecondLargest(a);
+    </script>
+</body>
+</html>

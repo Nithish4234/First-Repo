@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h3>Factorial of number</h3>
+    <script>
+
+        function Factorial(n){
+            let x;
+            let fact=1;
+            if(n==0){
+                document.write("Factorial of "+n+" is 1");
+            }
+            for(x=2;x<=n;x++){
+                fact=fact*x;
+            }
+            document.write("Factorial of "+n+" is "+fact);
+            document.write("<br>");
+        }
+        Factorial(1);
+        Factorial(5);
+    </script>
+</body>
+</html>

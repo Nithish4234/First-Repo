@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const e_commerce1={
+            project_id:3032,
+            project_name:"Project1",
+            frontend:"Html,Css",
+            backend:"Java,C++",
+            dev:function(){
+                document.write("Function 1");
+            }
+        }
+        document.write(e_commerce1.project_id+"<br>"); 
+        e_commerce1.dev();
+        document.write("<br>");
+
+        document.write("<br>Object using new keyword<br>");
+        const e_commerce2=new Object();
+            e_commerce2.project_id=2022;
+            e_commerce2.project_name="Project2";
+            e_commerce2.frontend="php";
+            e_commerce2.backend="python";
+            e_commerce2.dev=function(){
+            document.write("Function 2");
+        }
+        document.write(e_commerce2.project_name+"<br>");
+        e_commerce2.dev();
+        document.write("<br>");
+        
+        document.write("<br>Object using constructor<br>");
+        function E_comm(p_id,p_name,fend,bend){
+            this.project_id=p_id;
+            this.project_name=p_name;
+            this.frontend=fend;
+            this.backend=bend;
+            this.dev=function(){
+                document.write(this.project_name);
+            };
+        }
+
+        const e_commerce3= new E_comm(3054,"Project 3","JavaScript","C");
+        document.write(e_commerce3.frontend+"<br>");
+        e_commerce3.dev();
+
+
+    </script>
+</body>
+</html>

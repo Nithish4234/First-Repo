@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Voter eligibility checking</h3>
+    <script>
+
+        function CheckVoter(age){
+            if(age<18){
+                document.write("Your age is "+age+", so not eligible to apply vote");
+            }
+            else{
+                document.write("Your age is "+age+", so eligible to apply vote");
+
+            }
+            document.write("<br>");
+        }
+        CheckVoter(17);
+        CheckVoter(21);
+    </script>
+</body>
+</html>

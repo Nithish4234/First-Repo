@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Speed limits</h3>
+    <script>
+
+        function CheckSpeed(speed){
+            let speed_limit=50;
+            let warning=80;
+            if(speed<=speed_limit){
+                document.write("Safe driving.");
+            }
+            else if(speed>speed_limit && speed<=warning){
+                document.write("Decrese speed to 50.");
+            }
+            else{
+                document.write("Your licese suspended!");
+            }
+            document.write("<br>");
+        }
+
+        CheckSpeed(49);
+        CheckSpeed(79);
+        CheckSpeed(100);
+    </script>
+</body>
+</html>

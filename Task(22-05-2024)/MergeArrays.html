@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Arrays</title>
+</head>
+<body>
+    <h3>Merge 2 arrays and remove duplicates</h3>
+    <script>
+        let a1 = [0,1,2,1,0,3,4,4];
+        let a2 = [6,5,3,6,5];
+        let newArray = a1.concat(a2)
+        let unique = [];
+            newArray.forEach(element => {
+            if (!unique.includes(element)) {
+                unique.push(element);
+                }
+            });
+            for(let i=0;i<unique.length;i++){
+                document.write(unique[i]+"<br>");
+            }
+ </script>
+</body>
+</html>

@@ -10,5 +10,7 @@
         }
         else if(age <20&& gender=="children"){
            console.log("Go to 3rd floor.")
-        }
-    
+
+         }
+
+        
